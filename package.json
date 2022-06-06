@@ -1,0 +1,43 @@
+{
+  "name": "ui-comp-util-library",
+  "version": "1.0.0",
+  "description": "A dynamic Uitity/Component library developed with React/Typescript distributing both CommonJS and ESM. Components are tested with the JEST testing framework and documented with an interactive Storybook server.",
+  "main": "index.js",
+  "scripts": {
+    "storybook": "start-storybook -p 6006",
+    "build:storybook": "build-storybook",
+    "sass": "sass -w src/styles/_base.sass:src/styles/_base.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/WarrenCompany/ui-comp-util-library.git"
+  },
+  "author": "Warren Company",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/WarrenCompany/ui-comp-util-library/issues"
+  },
+  "homepage": "https://github.com/WarrenCompany/ui-comp-util-library#readme",
+  "dependencies": {
+    "@types/react": "^18.0.12",
+    "@types/react-dom": "^18.0.5",
+    "react": "^18.1.0",
+    "react-dom": "^18.1.0",
+    "sass": "^1.52.2",
+    "typescript": "^4.7.3"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.18.2",
+    "@storybook/addon-actions": "^6.5.7",
+    "@storybook/addon-essentials": "^6.5.7",
+    "@storybook/addon-interactions": "^6.5.7",
+    "@storybook/addon-links": "^6.5.7",
+    "@storybook/builder-webpack4": "^6.5.7",
+    "@storybook/manager-webpack4": "^6.5.7",
+    "@storybook/react": "^6.5.7",
+    "@storybook/testing-library": "^0.0.11",
+    "@types/node-sass": "^4.11.2",
+    "babel-loader": "^8.2.5",
+    "node-sass": "^7.0.1"
+  }
+}
