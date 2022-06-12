@@ -1,9 +1,13 @@
 # UI Utility/Comonent Library
 
-A dynamic Uitity/Component library developed with React/Typescript distributing both CommonJS and ESM. Components are tested with the JEST testing framework and documented with an interactive Storybook server.
+A dynamic Uitity/Component library developed with React/Typescript distributing both CommonJS and ESM. Components are tested with the JEST testing framework and documented with an interactive Storybook server. This repo is a WIP and is not stable or production ready at this stage.
 
-## Colors
+## Guide
 ![Color Template](https://github.com/WarrenCompany/ui-comp-util-library/blob/main/src/COLOR.png)
+![Padding](https://github.com/WarrenCompany/ui-comp-util-library/blob/main/src/PADDING.png)
+![Margin](https://github.com/WarrenCompany/ui-comp-util-library/blob/main/src/MARGIN.png)
+![Border](https://github.com/WarrenCompany/ui-comp-util-library/blob/main/src/BORDER.png)
+
 ## React
 
 ## React-dom
