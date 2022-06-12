@@ -2,6 +2,8 @@
 
 A dynamic Uitity/Component library developed with React/Typescript distributing both CommonJS and ESM. Components are tested with the JEST testing framework and documented with an interactive Storybook server.
 
+## Colors
+![Color Template](https://github.com/WarrenCompany/ui-comp-util-library/blob/main/src/COLOR.png)
 ## React
 
 ## React-dom
