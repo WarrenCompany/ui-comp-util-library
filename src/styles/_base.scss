@@ -1,0 +1,104 @@
+@use '../utilities/button/button.sass';
+@use './variables.scss' as variables;
+
+// default !bordered
+button {
+    border: 0;
+}
+
+// border-{radius}
+@each $name, $radius in variables.$border_radius {
+    .border-#{$name}{
+        border-radius: #{$radius}px;
+    }
+}
+
+// font-{family}
+@each $name, $family in variables.$font_families {
+    .font-#{$name} {
+        font-family: #{$family};
+    }
+}
+
+// font-{size}
+@each $name, $size in variables.$font_sizes {
+    .font-#{$name} {
+        font-size: #{$size}px;
+    }
+}
+
+// font-{weight}
+@each $name, $weight in variables.$font_weights {
+    .font-#{$name} {
+        font-weight: #{$weight};
+    }
+}
+
+// font-{style}
+@each $name, $style in variables.$font_styles {
+    @if $name == 'uppercase' or $name == 'lowercase'{
+        .#{$name}{
+            text-transform: #{$style};
+        }
+    } @else {
+        .font-#{$name} {
+            font-style: #{$style};
+        }
+    }
+    
+}
+
+// .p-{area/short}-{amount}
+@each $amount in variables.$amounts {
+    @each $area, $list in variables.$areas{
+        @if $area != x or $area != y or $area != full {
+            @each $side, $short in $list{
+                .p-#{$short}-#{$amount}{
+                    padding#{$side}: #{$amount}px;
+                }
+            }
+        }
+        .p-#{$area}-#{$amount}{
+            @each $side, $short in $list{
+                padding#{$side}: #{$amount}px;
+            }
+        }
+    }
+}
+
+// opacity-{num}
+@each $name, $num in variables.$opacity{
+    .opacity-#{$name}{
+        opacity: #{$num};
+    }
+} 
+
+// border-{size}-{color}-{density}
+@each $name, $weight in variables.$border_weight {
+    @each $color, $options in variables.$colors {
+        @each $density, $hex in $options {
+            .border-#{$name}-#{$color}-#{$density}{
+                border: solid #{$weight}px #{$hex};
+            }
+        }
+    }
+}
+
+// bg - { color } - { density }
+@each $color, $options in variables.$colors {
+    @each $density, $hex in $options {
+        .bg-#{$color}-#{$density}{
+            background-color: #{$hex};
+        }
+    }
+}
+
+// text - { color } - { density }
+@each $color, $options in variables.$colors {
+    @each $density, $hex in $options {
+        .text-#{$color}-#{$density}{
+            color: #{$hex};
+        }
+    }
+}
+

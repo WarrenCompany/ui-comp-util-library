@@ -24,7 +24,7 @@ Sass was the chosen pre-processor for numerous reasons, but mainly the syntax, n
 
 #### Cascading StyleSheets
 
-Auto-generated with the script `sass --watch input.sass : output.css`. This is going to be migrated into an npm command within the package.json file, but holding off for init commit.
+Auto-generated with the script `sass --watch input.sass : output.css`.
 
 ## Package Minification
 
