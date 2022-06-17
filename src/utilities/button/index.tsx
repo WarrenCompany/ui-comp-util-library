@@ -1,8 +1,8 @@
 import React from 'react';
-import Background from '../shared_interfaces/background';
-import Padding from '../shared_interfaces/padding';
-import Font from '../shared_interfaces/font';
-import Border from '../shared_interfaces/border';
+import Background from '../variables/background';
+import Padding from '../variables/padding';
+import Font from '../variables/font';
+import Border from '../variables/border';
 
 export interface ButtonOptions extends Padding, Font, Border, Background {
   label: string;

@@ -1,4 +1,4 @@
-import Options from "./options";
+import Options from "../_variables";
 
 export default interface Padding extends Options{
     padding?: boolean,
