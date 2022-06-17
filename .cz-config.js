@@ -36,12 +36,13 @@ module.exports = {
     ],
   
     scopes: [
-      { name: 'ui' },
-      { name: 'android' },
-      { name: 'ios' },
-      { name: 'home' },
-      { name: 'planner' },
-      { name: 'settings' },
+      { name: 'storybook' },
+      { name: 'utilities' },
+      { name: 'component' },
+      { name: 'styles' },
+      { name: 'jest' },
+      { name: 'package' },
+      { name: 'settings' }
     ],
   
     scopeOverrides: {
