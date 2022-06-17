@@ -1,61 +1,44 @@
 // Common Variables
-
 $start: 0;
 $stop_tens: 10;
 $stop_hundreds: 100;
 $stop_thousands: 1000;
+$stop_fonts: 72;
 
 $tens: "";
 $hundreds: "";
 $thousands: "";
+$font_weights: "";
 
-// Sizes
+// Sizes, Sides, & Axis
 $sizes:('xxs','xs','sm','md','lg', 'xl', 'xxl');
+$sides: ('T','B','L','R');
+$axis:('X','Y', 'BOTH');
 
-// Generate Array<numbers>[1-10]
-// Iterate from 1-10 and append to array
+// Array<numbers>[1-10]
 $i: $start;
 @while $i <= $stop_tens {
   $tens: append($tens, $i, comma);
   $i: $i + 1;
 }
-//Iterate through array and generate css class
-@each $digit in $tens {
-    @if $digit != "" {
-        .tens-#{$digit} {
-            color: black;
-        }
-    }
-}
 
-// Iterate from 1-100 and append to array
+// Array<numbers>[1-100]
 $j: $start;
 @while $j <= $stop_hundreds {
   $hundreds: append($hundreds, $j, comma);
   $j: $j + 1;
 }
-//Iterate through array and generate css class
-@each $digit in $hundreds {
-    @if $digit != "" {
-        .hundreds-#{$digit} {
-            color: black;
-        }
-    }
-}
 
-// Iterate from 1-1000 by 100's and append to array
+// Array<numbers>[1-1000].step(100)
 $k: $start;
 @while $k <= $stop_thousands {
   $thousands: append($thousands, $k, comma);
   $k: $k + 100;
 }
-//Iterate through array and generate css class
-@each $digit in $thousands {
-    @if $digit != "" {
-        .thousands-#{$digit} {
-            color: black;
-        }
-    }
+
+// Array<numbers>[1-72]
+$l: $start;
+@while $l <= $stop_fonts {
+  $font_weights: append($font_weights, $l, comma);
+  $l: $l + 100;
 }
-
-
