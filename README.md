@@ -48,5 +48,9 @@ Use ` --no-verify ` to skip linting
 
 ### Push a Branch:
 ```
-git push -set--upstream origin { branch_name }
+git push --set-upstream origin { local_branch_name }
+```
+or run the short code:
+```
+git push -u -o { local_branch_name }
 ```
