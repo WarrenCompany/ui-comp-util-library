@@ -11,7 +11,7 @@ export default {
     background_color: { control: 'select' },
     background_color_density: { control: 'select' },
     padding_side: {control: 'multi-select'},
-    // test change
+    // test change x2
     //hide base inheritance 
     colors: {table: {disable: true}},
     hundreds: {table: {disable: true}},
