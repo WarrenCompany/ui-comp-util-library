@@ -80,6 +80,8 @@ typings/
 
 # Nuxt.js build / generate output
 .nuxt
+
+# Dist folder generation
 dist
 
 # Gatsby files
@@ -102,3 +104,9 @@ dist
 
 # TernJS port file
 .tern-port
+
+# Generated CSS
+styles/_base.css
+styles/_base.css.map
+
+package-lock.json
