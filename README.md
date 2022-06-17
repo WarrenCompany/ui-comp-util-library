@@ -36,16 +36,14 @@ git checkout -b { utility || component } / { change }
 
 ### Make a Commit:
 ```
-git commit -am "{ type }: your message "
+git commit -am ":emoji: { type }: your message "
 ```
-#### Types:
-- ` Feat: ` for adding net new (or fully redesigned) features into the codebase
-- ` Fix: ` for bug fixes, refactors, and optimizations to the existing codebase
-- ` Test: ` for testing things or implementing new unit tests
-- ` Chore: ` for making minor changes to the casebase (i.e. versioning, migrations, etc.)
-- ` Misc: ` for everything else -- last resort tag
-
-Use ` --no-verify ` to skip linting
+#### Emojis & Types:
+- :bulb: ` Feat: ` for adding net new (or fully redesigned) features into the codebase
+- :hammer_and_wrench: ` Fix: ` for bug fixes, refactors, and optimizations to the existing codebase
+- :construction: ` Test: ` for testing things or implementing new unit tests
+- :pushpin: ` Chore: ` for making minor changes to the casebase (i.e. versioning, migrations, etc.)
+- :label: ` Misc: ` for everything else -- last resort tag
 
 ### Push a Branch:
 ```
