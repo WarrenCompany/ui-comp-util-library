@@ -5,13 +5,11 @@ A dynamic Uitity/Component library developed with React/Typescript distributing 
 - React-dom
 - @types
 - TypeScript
+- SASS
+- CSS
 - Prettier
-- Storybook
 - JEST
-- Syntatically Awesome StyleSheets
-    - Sass was the chosen pre-processor for numerous reasons, but mainly the syntax, nesting, and variable capabilities. Structure and best practices will be an area of focus in future development of this library.
-- Cascading StyleSheets 
-    - Auto-generated with the script `sass --watch input.sass : output.css`.
+- Storybook
 - Package Minification
 
 ## Scripts
