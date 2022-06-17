@@ -6,3 +6,5 @@ export default interface Options {
     sizes?: 'xxs' | 'xs' | 'sm' | 'md' | 'lg' | 'xl' | 'xxl',
     sides?: 'x' | 'y' | 't' | 'b' | 'l' | 'r' | 'full',
   }
+
+  // this is a test
