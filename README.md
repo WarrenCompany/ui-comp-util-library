@@ -40,6 +40,6 @@ git checkout -b { utility || component } / { change }
 - ` Feat: ` for adding net new (or fully redesigned) features into the codebase
 - ` Fix: ` for bug fixes, refactors, and optimizations to the existing codebase
 - ` Chore: ` for making minor changes to the casebase (i.e. versioning, migrations, etc.)
-- ` Misc: ` for everything else -- last resort tag.
+- ` Misc: ` for everything else -- last resort tag
 
 Use ` --no-verify ` to skip linting
