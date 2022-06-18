@@ -1,10 +1,13 @@
 // Common Variables
 $start: 0;
-$stop_tens: 10;
+$stop_ones: 10;
+$stop_tens: 100;
 $stop_hundreds: 100;
 $stop_thousands: 1000;
 $stop_fonts: 72;
 
+// Number Array Decalrations
+$ones: "";
 $tens: "";
 $hundreds: "";
 $thousands: "";
@@ -17,8 +20,8 @@ $axis:('X','Y', 'BOTH');
 
 // Array<numbers>[0-10]
 $i: $start;
-@while $i <= $stop_tens {
-  $tens: append($tens, $i, comma);
+@while $i <= $stop_ones {
+  $ones: append($ones, $i, comma);
   $i: $i + 1;
 }
 
@@ -29,16 +32,23 @@ $j: $start;
   $j: $j + 1;
 }
 
-// Array<numbers>[0-1000].step(100)
+// Array<numbers>[0-100].step(10)
 $k: $start;
-@while $k <= $stop_thousands {
-  $thousands: append($thousands, $k, comma);
-  $k: $k + 100;
+@while $k <= $stop_tens {
+  $tens: append($tens, $k, comma);
+  $k: $k + 10;
+}
+
+// Array<numbers>[0-1000].step(100)
+$l: $start;
+@while $l <= $stop_thousands {
+  $thousands: append($thousands, $l, comma);
+  $l: $l + 100;
 }
 
 // Array<numbers>[0-72]
-$l: $start;
-@while $l <= $stop_fonts {
-  $font_weights: append($font_weights, $l, comma);
-  $l: $l + 1;
+$m: $start;
+@while $m <= $stop_fonts {
+  $font_weights: append($font_weights, $m, comma);
+  $m: $m + 1;
 }
