@@ -1,0 +1,62 @@
+@use '../scss/variables.scss' as variables;
+
+$border_radii: (
+    "xxs": 3,
+    "xs": 5,
+    "sm": 8,
+    "md": 10,
+    "lg": 15,
+    "xl": 20,
+    "xxl": 25,
+    "pill": 50,
+);
+
+// BORDER SIDE AND WIDTH 
+// border - { border_side [T,B,L,R] || [X,Y,FULL] } - { border_weight [0-10].step(1) }
+@each $border_weight in variables.$ones {
+    @each $short, $side in variables.$sides {
+        .border-#{$side}-#{$border_weight} {
+            border-#{$side}: #{$border_weight};
+        }
+    }
+    @each $short, $side in variables.$axis {
+        @if $side == 'x' {
+            .border-#{$side}-#{$border_weight} {
+                border-top: #{$border_weight};
+                border-bottom: #{$border_weight};
+            }
+        }
+        @else if $side == 'y' {
+            .border-#{$side}-#{$border_weight} {
+                border-left: #{$border_weight};
+                border-right: #{$border_weight};
+            }
+        }
+        @else {
+            .border-#{$side}-#{$border_weight} {
+                border-top: #{$border_weight};
+                border-bottom: #{$border_weight};
+                border-left: #{$border_weight};
+                border-right: #{$border_weight};
+            }
+        }
+    }
+}
+
+// BORDER STYLE
+// border - { border_style [solid || dashed] }
+@each $style in variables.$line_styles {
+    .border-#{$style} {
+        border-style: #{$style};
+    }
+}
+
+
+// BORDER RADIUS
+// border - { border_radii [xxs-xxl] }
+@each $size, $val in $border_radii {
+    .border-#{$size} {
+        border-width: #{$val};
+    }
+}
+
