@@ -15,8 +15,18 @@ $font_weights: "";
 
 // Sizes, Sides, & Axis
 $sizes:('xxs','xs','sm','md','lg', 'xl', 'xxl');
-$sides: ('T','B','L','R');
-$axis:('X','Y', 'BOTH');
+$line_styles: ('solid', 'dashed');
+$sides: (
+  'T': 'top',
+  'B': 'bottom',
+  'L': 'left',
+  'R': 'right'
+  );
+$axis:(
+  'X': 'x',
+  'Y': 'y',
+  'BOTH': 'full'
+  );
 
 // Array<numbers>[0-10]
 $i: $start;

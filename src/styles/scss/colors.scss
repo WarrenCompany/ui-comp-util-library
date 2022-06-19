@@ -1,14 +1,4 @@
-// Colors
-$colors: (
-    "red": $red,
-    "orange": $orange,
-    "yellow": $yellow,
-    "green": $green,
-    "blue": $blue,
-    "indigo": $indigo,
-    "violet": $violet,
-    "greyscale": $greyscale,
-);
+
 
 // Hex List Group
 $red: (
@@ -114,4 +104,16 @@ $greyscale: (
     123123,
     123123,
     123123,
+);
+
+// Colors
+$colors: (
+    "red": $red,
+    "orange": $orange,
+    "yellow": $yellow,
+    "green": $green,
+    "blue": $blue,
+    "indigo": $indigo,
+    "violet": $violet,
+    "greyscale": $greyscale,
 );
