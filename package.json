@@ -1,5 +1,5 @@
 {
-  "name": "ui-comp-util-library",
+  "name": "@warrencompany/ui-comp-util-library",
   "version": "1.0.0",
   "description": "A dynamic Uitity/Component library developed with React/Typescript distributing both CommonJS and ESM. Components are tested with the JEST testing framework and documented with an interactive Storybook server.",
   "main": "index.js",
