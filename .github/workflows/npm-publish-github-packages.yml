@@ -30,7 +30,8 @@ jobs:
         with:
           node-version: 16
           registry-url: https://npm.pkg.github.com/
+          scope: '@warrencompany'
       - run: npm i
       - run: npm publish
         env:
-          NODE_AUTH_TOKEN: ${{secrets.NPM_TOKEN}}
+          NODE_AUTH_TOKEN: ${{secrets.GITHUB_TOKEN}}
